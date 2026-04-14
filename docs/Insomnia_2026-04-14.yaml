@@ -1,0 +1,188 @@
+type: collection.insomnia.rest/5.0
+schema_version: "5.1"
+name: "2026"
+meta:
+  id: wrk_ee8c5d3e36fa4035802564f77683ad55
+  created: 1770139793389
+  modified: 1770139793389
+  description: ""
+collection:
+  - name: ManipularXML
+    meta:
+      id: fld_60150beb708441b58ad793e9f756b677
+      created: 1770139807312
+      modified: 1770140001614
+      sortKey: -1770139807312
+      description: ""
+  - name: Versionamento
+    meta:
+      id: fld_fd8762138fbc4d01b62accd6f005fdde
+      created: 1770738154786
+      modified: 1770738154786
+      sortKey: -1770738154786
+      description: ""
+  - name: Upload
+    meta:
+      id: fld_b0c001df1d8040de85f78bd21c70443a
+      created: 1770748329078
+      modified: 1770748329078
+      sortKey: -1770748329078
+      description: ""
+  - name: Atv-1
+    meta:
+      id: fld_94ca3ca7682f4b4e8f3ade2e892015a4
+      created: 1772539716838
+      modified: 1772539716838
+      sortKey: -1772539716838
+      description: ""
+  - name: Atividade31/03
+    meta:
+      id: fld_8f9f037190c44c7e96996682849b35c1
+      created: 1774964085886
+      modified: 1774964085886
+      sortKey: -1774964085886
+      description: ""
+  - name: ATV_07/04
+    meta:
+      id: fld_5f9330fed5e5447c9eb43ab54fc74cd7
+      created: 1775583073098
+      modified: 1775583076316
+      sortKey: -1775583073098
+      description: ""
+    children:
+      - url: http://localhost:8000/clientes/19
+        name: New Request
+        meta:
+          id: req_7fbfe395bc3647c3981e2f367ca0dd51
+          created: 1775583077316
+          modified: 1776166721979
+          isPrivate: false
+          description: ""
+          sortKey: -1775583077316
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/12.4.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8000/clientes/19
+        name: New Request
+        meta:
+          id: req_26748f28d2fb467ea28a752c6d56b5c1
+          created: 1775583082989
+          modified: 1776166714239
+          isPrivate: false
+          description: ""
+          sortKey: -1775583082989
+        method: PUT
+        body:
+          mimeType: application/json
+          text: |-
+            {
+              "nome": "Richard",
+              "cpf": "12345678901",
+              "telefone": "11999999999",
+              "cep": "13010000",
+              "numero": "123",
+              "complemento": "Casa"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.4.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8000/clientes
+        name: New Request
+        meta:
+          id: req_d716314332e340a1bd65ef8258e9d9aa
+          created: 1775583087029
+          modified: 1776166425137
+          isPrivate: false
+          description: ""
+          sortKey: -1775583087029
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+              "nome": "Gabriel",
+              "cpf": "49297196829",
+              "telefone": "999999999",
+              "cep": "13010-000",
+              "numero": "123",
+              "complemento": "Casa"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.4.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8000/clientes
+        name: New Request
+        meta:
+          id: req_5a6818d68c24426fa2f98e33d390f78a
+          created: 1775583088749
+          modified: 1775586822385
+          isPrivate: false
+          description: ""
+          sortKey: -1775583088749
+        method: GET
+        body:
+          mimeType: application/json
+          text: ""
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.4.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_1f80925c6705650236ce366ce813300c93a04144
+    created: 1770139793437
+    modified: 1770139793437
+environments:
+  name: Base Environment
+  meta:
+    id: env_1f80925c6705650236ce366ce813300c93a04144
+    created: 1770139793426
+    modified: 1770139793426
+    isPrivate: false

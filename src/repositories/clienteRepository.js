@@ -90,7 +90,10 @@ const clienteRepository = {
     },
 
     selecionar: async () => {
-        const sql = 'SELECT * FROM clientes';
+        const sql = `SELECT clientes.*, telefones.*, enderecos.* 
+        FROM clientes
+        INNER JOIN telefones ON clientes.id = telefones.idCliente
+        INNER JOIN enderecos ON clientes.id = enderecos.idCliente `;
         const [rows] = await connection.execute(sql);
         return rows;
     }
